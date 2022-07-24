@@ -18,5 +18,5 @@ cl = LinkedListFull.LinkedList()
 
 cl.generate(10,0,99)   
 print(cl)
-print(nthToLast(cl,2))
+print(nthToLast(cl,-5))
 
