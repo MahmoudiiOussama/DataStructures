@@ -40,14 +40,15 @@ class LinkedList:
         else:
             self.tail.next = newNode
             self.tail = self.tail.next
-        return self.tail
+        return self.tail , 'the node has been added jawek behy'
 
     def generate(self,n,min,max):
         self.head = None
         self.tail = None
         for i in range(n):
             self.add(randint(min,max))
-        return self
+        return self ,'created jawha obba'
+
 
 
 cl = LinkedList()
