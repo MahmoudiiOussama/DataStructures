@@ -49,9 +49,3 @@ class LinkedList:
             self.add(randint(min,max))
         return self ,'created jawha obba'
 
-
-
-cl = LinkedList()
-cl.generate(5,10,20)
-print(cl)
-len(cl)
