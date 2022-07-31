@@ -3,22 +3,27 @@ from Lists import LinkedListFull
 
 def intersection(llA,llB):
     if llA.tail is not llB.tail:
-        return False
-    
+        return None
+
     lenA = len(llA)
     lenB = len(llB)
     shorter = llA if lenA < lenB else llB
     longer = llA if lenA > lenB else llB
     diff = len(longer) - len(shorter)
-    longerHead = longer.head
-    shorterHead = shorter.head
+    longLL = longer.head
+    shortLL = shorter.head
     for i in range(diff):
-        longerHead = longerHead.next
+        longLL =longLL.next
 
-    while shorterHead is not longerHead:
-        shorterHead = shorterHead.next
-        longerHead = longerHead.next
-    return shorterHead
+    while shortLL is not longLL:
+        shortLL = shortLL.next
+        longLL = longLL.next
+    return shortLL
+
+
+
+
+
 
 
 def addSameNode(llA,llB,value):

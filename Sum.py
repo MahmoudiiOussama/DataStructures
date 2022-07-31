@@ -16,7 +16,7 @@ def sum(llA,llB):
             n2 = n2.next
         ll.add(int(results % 10))
         carry = results / 10
-    return ll
+    return ll 
 
 
 llA = LinkedListFull.LinkedList()
